@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<body>
+    <div class="header">
+        <h1>Weather Info</h1>
+        <div class="input-box">
+            <input type="text" placeholder="Search..." autocomplete="off" id="inp">
+            <button type="submit" id="btn"><i class="fas fa-search"></i></button>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="location">
+                <span id="city">City</span><span id="country">COUNTRY</span>
+            </div>
+        
+            <div class="temperature">
+                <span class="temperature-value">___</span> <span class="celsius">&#8451;</span>
+            </div>
+        
+            <div class="icon-container">
+                <img src="/images/weather.png" id="temp-icon">
+                <div class="temperature-details">
+                    <span id="temperature-feels-like-value">FEELS LIKE: </span> <span class="celsius2">&#8451;</span>
+                    <p id="weather">__________</p>
+                    <p id="weather-details">__________</p>
+                    <p id="pressure">PRESSURE: </p>
+                </div>
+            </div>
+        
+            <p class="humidity">HUMIDITY: </p>
+        
+            <p class="wind-speed">WIND SPEED: </p>
+        </div>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>
